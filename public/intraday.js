@@ -86,6 +86,8 @@ document.addEventListener("DOMContentLoaded", function() {
     $('input[name="date"]').daterangepicker({
       singleDatePicker: true,
       showDropdowns: true,
+      startDate: moment().startOf('day'),
+      endDate: moment(),
       maxDate: new Date()
     });
   });
